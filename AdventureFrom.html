@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Travel Club Form</title>
+    <link rel="stylesheet" href="AdventureForm.css" type="text/css">
+
+</head>
+<body>
+    <div class="form-container">
+
+        <!-- the header for the form -->
+         <div class="form-header">
+            <h2> Adventure Travel Club </h2>
+            <p class="helpText"> Begin your journey with fellow adventurers </p>
+         </div>
+
+         <!-- form goes here -->
+          <form>
+            <h5> Personal Information</h5>
+            <div class="flex">
+                <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+                <div>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" required>
+                </div>
+            </div>
+
+            <section class="Adventure">
+                <label for="email"> Email </label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="date"> Date of Birth </label>
+                <input type="date" id="email" name="email" required>
+            </section>
+          </form>
+
+          <!-- Second Form -->
+          <form>
+            <h5> Adventure Preferences </h5>
+            <label for="level"> Experience Level </label>
+            <select id="level" name="level" required>
+                <option> Select your experience level </option>
+                <option value="novice"> Novice </option>
+                <option value="advanced"> Advanced Novice </option>
+                <option value="moderate"> Moderate </option>
+                <option value="advanced"> Advanced Moderate </option>
+            </select>
+
+            
+            <h6> Preferred Activities </h6>
+            <div><input type="checkbox" id="activities" name="activities" value="Hiking">
+            <label for="activities"> Hiking </label></div>
+
+            <div><input type="checkbox" id="activities" name="activities" value="rock climbing">
+            <label for="activities"> Rock Climbing</label></div>
+
+            <div><input type="checkbox" id="activities" name="activities" value="kayakingg">
+            <label for="activities"> Kayaking </label></div>
+
+            <div><input type="checkbox" id="activities" name="activities" value="Scuba Diving">
+            <label for="activities"> Scuba Diving </label></div>
+
+            <h6> Preferred Trip Duration </h6>
+            <div><input type="radio" id="weekend" name="weekend"><label for="weekend">Weekend Trips (2-3 days)</label> </div>
+
+            <div><input type="radio" id="weekend" name="weekend"><label for="weekend">Week-long Adventures (5-7 days)</label> </div>
+
+            <div><input type="radio" id="weekend" name="weekend"><label for="weekend"> Extended Expeditions (2+ weeks)</label> </div>
+
+          </form>
+
+          <!-- Third Form -->
+          <form>
+            <h5> Additional Information </h5>
+            <label for="fitnessLevel">Fitness Level (1-10)</label>
+            <input type="range" id="fitnessLevel" name="fitnessLevel">
+
+            <label for="message"> Tell us about yourself </label>
+            <textarea id="message" name="message" placeholder="Share your adventures experiences and what excites you about joining our club..."></textarea>
+
+            <label for="profile"> Profile Photo </label>
+            <input type="file" id="profile" name="profile" accept=".pdf , .doc , .docx">
+          </form>
+
+          <input type="checkbox" id="checkbox" required>
+          <label> I agree to the Terms and Conditions and Privacy Policy </label>
+
+          <input type="submit" value="Submit Registration" class="btn">
+    </div>
+</body>
+</html>
